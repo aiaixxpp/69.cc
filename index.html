@@ -582,6 +582,139 @@ function closefl(id){
 </script>
 	
 	<body>
+	
+	
+	<!-- 图片广告弹窗 -->
+<style>
+    /* 弹窗样式 */
+    .ad-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ad-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    
+    .ad-link {
+        display: block;
+        text-decoration: none;
+    }
+    
+    .ad-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .ad-image:hover {
+        transform: scale(1.02);
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border: none;
+        border-radius: 50%;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        z-index: 1001;
+    }
+    
+    .close-btn:hover {
+        background-color: #ff4444;
+        color: white;
+        transform: scale(1.1);
+    }
+    
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+        .ad-content {
+            max-width: 95%;
+        }
+        
+        .close-btn {
+            top: -10px;
+            right: -10px;
+            width: 25px;
+            height: 25px;
+            font-size: 16px;
+        }
+    }
+</style>
+
+<div id="adPopup" class="ad-popup">
+    <div class="ad-content">
+        <a href="https://www.qjoab638.top/" target="_blank" class="ad-link" onclick="handleAdClick(event)">
+            <img src="https://www.uxmum.top/images/683acd82bb50e4b4629db017.gif" alt="广告图片" class="ad-image">
+        </a>
+        <button class="close-btn" onclick="closeAd()">&times;</button>
+    </div>
+</div>
+
+<script>
+    // 页面加载完成后显示广告弹窗
+    window.addEventListener('load', function() {
+        // 延迟1秒显示弹窗，让用户先看到页面内容
+        setTimeout(function() {
+            document.getElementById('adPopup').style.display = 'flex';
+        }, 10);
+    });
+
+    // 关闭广告弹窗
+    function closeAd() {
+        document.getElementById('adPopup').style.display = 'none';
+    }
+
+    // 处理广告点击事件
+    function handleAdClick(event) {
+        // 阻止事件冒泡，避免触发弹窗关闭
+        event.stopPropagation();
+        
+        // 这里可以添加点击统计代码
+        console.log('广告被点击了');
+        
+        // 链接会自动跳转，因为a标签的href属性已经设置
+    }
+
+    // 点击弹窗外部区域关闭弹窗
+    document.getElementById('adPopup').addEventListener('click', function(event) {
+        // 如果点击的是弹窗背景（不是内容区域），则关闭弹窗
+        if (event.target === this) {
+            closeAd();
+        }
+    });
+
+    // 按ESC键关闭弹窗
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeAd();
+        }
+    });
+</script>
+	
+	
 		<!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -865,7 +998,7 @@ function closefl(id){
 
 
 <a rel="external nofollow" href="https://www.qjoab638.top/" target='_blank'>
-<img src="https://wkphoto.cdn.bcebos.com/eac4b74543a98226484276719a82b9014b90ebe1.jpg" border='0' width='100%' height='80' /></a>
+<img src="https://raw.githubusercontent.com/xingxing890/baidu.com/refs/heads/main/images/document_4904483972039312944.gif" border='0' width='100%' height='80' /></a>
 
 
 <a rel="external nofollow" href="https://wwww.849ee966.vip/" target='_blank'>
@@ -2652,7 +2785,7 @@ $("img.lazy").lazyload({
 
 
 <a rel="external nofollow" href="https://www.qjoab638.top/" target='_blank'>
-<img src="https://wkphoto.cdn.bcebos.com/eac4b74543a98226484276719a82b9014b90ebe1.jpg" border='0' width='100%' height='80' /></a>
+<img src="https://raw.githubusercontent.com/xingxing890/baidu.com/refs/heads/main/images/document_4904483972039312944.gif" border='0' width='100%' height='80' /></a>
 
 
 <a rel="external nofollow" href="https://wwww.849ee966.vip/" target='_blank'>
@@ -2670,7 +2803,7 @@ $("img.lazy").lazyload({
  <!-- 横幅 -->
 <br />
 <br />
-<p align="center"><font face="宋体"><b><a href="https://babacaoxiaoh.github.io/jichubawang/">&#36820;&#22238;&#39318;&#39029;</a> |<font color="#FF0000"> </font> 
+<p align="center"><font face="宋体"><b><a href="https://aiaixxpp.github.io/69.com/">&#36820;&#22238;&#39318;&#39029;</a> |<font color="#FF0000"> </font> 
 <a href="javascript:scroll(0, 0)"><font color="#000000">&#36820;&#22238;&#39030;&#37096;</font></a> 
 <br />
 
